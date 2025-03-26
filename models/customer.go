@@ -1,13 +1,8 @@
 package models
 
-import (
-	"time"
-
-	"gorm.io/gorm"
-)
+import "time"
 
 type Customer struct {
-	gorm.Model
 	CustomerID  uint      `gorm:"column:customer_id;primaryKey;autoIncrement"`
 	FirstName   string    `gorm:"column:first_name;not null"`
 	LastName    string    `gorm:"column:last_name;not null"`
